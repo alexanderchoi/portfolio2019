@@ -14,3 +14,36 @@ body {
 h1 {
   display: inline-block;
 }
+
+ul {
+  list-style-type: none;
+}
+
+#menu ul {
+  float: right;
+}
+
+#menu li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#work {
+  margin: 0 0 0 200px;
+}
+
+#info {
+  width: 200px;
+  position: fixed;
+  bottom: 20px;
+}
+
+#info ul {
+  /* float: right; */
+  margin: 0;
+  padding: 0;
+}
+
+#info ul li {
+  /* text-align: right; */
+}

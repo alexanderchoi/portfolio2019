@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { directive, directiveLiteral } from "@babel/types";
+import Work from "./Work.js";
 
 class Navbar extends Component {
   render() {
@@ -9,13 +9,15 @@ class Navbar extends Component {
         <div id="menu">
           <ul>
             <li>Work</li>
-            <li>About</li>
+            <li>Archive</li>
             <li>Info</li>
           </ul>
+        </div>
+        <div id="work">
+          <Work />
         </div>
       </div>
     );
   }
 }
-
 export default Navbar;
