@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Work from "./Work.js";
 
 class Navbar extends Component {
   render() {
@@ -12,9 +11,6 @@ class Navbar extends Component {
             <li>Archive</li>
             <li>Info</li>
           </ul>
-        </div>
-        <div id="work">
-          <Work />
         </div>
       </div>
     );
