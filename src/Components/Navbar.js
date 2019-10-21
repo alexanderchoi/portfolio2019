@@ -7,9 +7,9 @@ class Navbar extends Component {
         <h1>Alex Choi</h1>
         <div id="menu">
           <ul>
-            <li>Work</li>
-            <li>Archive</li>
-            <li>Info</li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#archive">Archive</a></li>
+            <li><a href="#info">Info</a></li>
           </ul>
         </div>
       </div>
