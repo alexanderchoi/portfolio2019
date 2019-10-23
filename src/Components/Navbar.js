@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 
 class Navbar extends Component {
+  state={
+    display:'wordk'
+  }
   render() {
     return (
       <div>
-        <h1>Alex Choi</h1>
+        <h1>Project</h1>
         <div id="menu">
           <ul>
             <li><a href="#work">Work</a></li>
