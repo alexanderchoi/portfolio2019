@@ -1,19 +1,26 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import "../App.css";
 import Navbar from "./Navbar.js";
-import Work from './Work.js';
-import Info from './Info.js';
+import Work from "./Work/Work.js";
+import Info from "./Info/Info.js";
 
 class App extends Component {
-  state={
-    display: 'work'
-  }
-  
+  state = {
+    display: "Work"
+  };
+
+  changeView = e => {
+    let display = e.target.outerHTML.slice(4, 8);
+    this.setState({
+      display: display
+    });
+  };
+
   render() {
     return (
       <div>
-        <Navbar />
-        {this.state.display==='work'?<Work/>:<Info/>}
+        <Navbar changeView={this.changeView.bind(this)} />
+        {this.state.display === "Work" ? <Work /> : <Info />}
       </div>
     );
   }

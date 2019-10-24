@@ -1,18 +1,17 @@
 import React, { Component } from "react";
 
 class Navbar extends Component {
-  state={
-    display:'wordk'
-  }
+  state = {
+    display: "work"
+  };
   render() {
     return (
       <div>
-        <h1>Project</h1>
+        <h2>Alex Choi &mdash; Web Development</h2>
         <div id="menu">
           <ul>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#archive">Archive</a></li>
-            <li><a href="#info">Info</a></li>
+            <li onClick={this.props.changeView}>Work</li>
+            <li onClick={this.props.changeView}>Info</li>
           </ul>
         </div>
       </div>

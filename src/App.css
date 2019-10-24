@@ -1,7 +1,7 @@
 body {
-  background-color: black;
-  color: white;
   font-family: "Roboto", serif;
+  color: #212232;
+  /* background-color: #212232; */
 }
 
 #menu {
@@ -11,13 +11,9 @@ body {
   height: 10px;
 }
 
-#menu a {
-  text-decoration:none;
-  color:white;
-}
-
-h1 {
+h2 {
   display: inline-block;
+  font-size: 1.3em;
 }
 
 ul {
@@ -31,4 +27,18 @@ ul {
 #menu li {
   display: inline;
   margin: 0 10px;
+}
+
+.temp {
+  width: 300px;
+}
+
+.underline {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  color: #212232;
+  text-decoration: none;
+}
+
+#work {
+  margin-left: 50px;
 }
