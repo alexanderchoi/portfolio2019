@@ -27,6 +27,7 @@ ul {
 #menu li {
   display: inline;
   margin: 0 10px;
+  cursor:pointer;
 }
 
 .temp {
@@ -39,6 +40,51 @@ ul {
   text-decoration: none;
 }
 
+.clientURL:hover {
+  color:#4f4f4f;
+}
+
 #work {
   margin-left: 50px;
+}
+
+.email textarea:hover {
+  border:none;
+  color:transparent;
+  text-shadow: 0 0 0 #4f4f4f;
+}
+
+.email:hover ~ #tooltip {
+  display:block;
+}
+
+.email textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  resize: none; /*remove the resize handle on the bottom right*/
+  width:179px;
+  height:1.2em;
+  font-family:'Roboto', serif;
+  font-size:1em;
+  cursor:pointer;
+  border-bottom: 1px solid black;
+
+  color:transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+.email textarea::selection{
+  background:transparent;
+}
+
+#tooltip {
+  text-decoration:none;
+  position:relative;
+  display:none;
 }

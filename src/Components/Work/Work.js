@@ -7,7 +7,7 @@ class Work extends Component {
     projects: [
       {
         client: "NKP Medical",
-        clientWebsite: "https://www.nkpmedical.com/",
+        clientURL: "https://www.nkpmedical.com/",
         title: "Plastic Surgery Landing Pages",
         description: "Front end web development, debugging and support.",
         images: [nkp1]
