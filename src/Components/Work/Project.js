@@ -3,21 +3,24 @@ import React, { Component } from "react";
 class Project extends Component {
   componentDidMount() {
     var tooltip = document.getElementById('tooltip');
-      console.log(tooltip);
       window.onmousemove = function (e) {
         var x = e.clientX,
             y = e.clientY;
-        tooltip.style.top = (y - 400) + 'px';
-        tooltip.style.left = (x  ) + 'px';
+        tooltip.style.top = (y - 420) + 'px';
+        tooltip.style.left = (x - 40) + 'px';
        };
   }
   
   render() {
-    const copyToClipboard = () => {
+    const copyEmailToClipBoard = () => {
       document.querySelector('.email').childNodes[0].select();
       document.execCommand('Copy');
       document.activeElement.blur()
-      document.getElementById('tooltip').innerText='Copied!'
+      document.getElementById('tooltip').innerText='Copied to clipboard!'
+    }
+
+    const resetToolTipText = () => {
+      document.getElementById('tooltip').innerText='Click to copy'
     }
 
     return (
@@ -38,7 +41,7 @@ class Project extends Component {
           <br />
           <div>+1 714 337 0522</div>
           <div>
-            <span className="email" onClick={function() {copyToClipboard()}}><textarea className="noselect" spellCheck="false" defaultValue="alexchoiweb@gmail.com"></textarea></span><span id="tooltip">Click to copy</span>
+            <span className="email" onClick={function() {copyEmailToClipBoard()}} onMouseLeave={function() {resetToolTipText()}}><textarea className="noselect" spellCheck="false" defaultValue="alexchoiweb@gmail.com"></textarea></span><span id="tooltip">Click to copy</span>
           </div>
           
         </div>

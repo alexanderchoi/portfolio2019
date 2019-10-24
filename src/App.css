@@ -1,7 +1,6 @@
 body {
   font-family: "Roboto", serif;
   color: #212232;
-  /* background-color: #212232; */
 }
 
 #menu {
@@ -87,4 +86,5 @@ ul {
   text-decoration:none;
   position:relative;
   display:none;
+  width:150px;
 }
