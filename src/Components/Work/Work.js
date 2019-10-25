@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Project from "./Project.js";
-import nkp1 from "../../image/nkp/drhurvitz.png";
+import nkp1 from "../../image/nkp/mobile03.png";
 
 class Work extends Component {
   state = {

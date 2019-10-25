@@ -29,10 +29,6 @@ ul {
   cursor:pointer;
 }
 
-.temp {
-  width: 300px;
-}
-
 .underline {
   border-bottom: 1px solid rgba(0, 0, 0, 1);
   color: #212232;
@@ -87,4 +83,11 @@ ul {
   position:relative;
   display:none;
   width:150px;
+}
+
+.imgBorder {
+  border: 10px solid rgba(0, 0, 0, 1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 28px;
+  width: 300px;
 }

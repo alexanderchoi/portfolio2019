@@ -26,7 +26,7 @@ class Project extends Component {
     return (
       <div>
         <h5>&mdash; {this.props.project.client}</h5>
-        <img className="temp" src={this.props.project.images[0]} alt="none" />
+        <img className="imgBorder" src={this.props.project.images[0]} alt="none" />
 
         <div className="projectFooter">
           <h5>
