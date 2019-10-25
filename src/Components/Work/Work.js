@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Project from "./Project.js";
-import nkp1 from "../../image/nkp/mobile03.png";
+import NKPImages from './ProjectImages/NKPImages.js'
+import ASFACImages from './ProjectImages/ASFACImages.js'
 
 class Work extends Component {
   state = {
@@ -10,11 +11,15 @@ class Work extends Component {
         clientURL: "https://www.nkpmedical.com/",
         title: "Plastic Surgery Landing Pages",
         description: "Front end web development, debugging and support.",
-        images: [nkp1]
-      }
-      // {
-      //   name: "project 2"
-      // },
+        images: NKPImages
+      },
+      {
+        client: "A Show For A Change",
+        clientURL: "https://ashowforachange.com/",
+        title: "Social-conscious streaming platform",
+        description: "Front end web development, debugging and support.",
+        images: ASFACImages
+      },
       // {
       //   name: "project 3"
       // }

@@ -26,8 +26,12 @@ class Project extends Component {
     return (
       <div>
         <h5>&mdash; {this.props.project.client}</h5>
-        <img className="imgBorder" src={this.props.project.images[0]} alt="none" />
-
+        <div className="projectCarousel">
+          <img className="imgBorder" src={this.props.project.images[2]} alt="none" />
+          <img className="imgBorder" src={this.props.project.images[3]} alt="none" />
+          <img className="imgBorder" src={this.props.project.images[4]} alt="none" />
+        </div>
+        
         <div className="projectFooter">
           <h5>
             <a href={this.props.project.clientURL} target="_blank" rel="noopener noreferrer" className="clientURL underline">
