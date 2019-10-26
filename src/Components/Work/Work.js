@@ -20,9 +20,13 @@ class Work extends Component {
         description: "Front end web development, debugging and support.",
         images: ASFACImages
       },
-      // {
-      //   name: "project 3"
-      // }
+      {
+        client: "Walking Bucket",
+        clientURL: "https://ashowforachange.com/",
+        title: "Personal for basketball shot progress",
+        description: "Full stack web development, debugging and support.",
+        images: ASFACImages
+      },
     ]
   };
   render() {
