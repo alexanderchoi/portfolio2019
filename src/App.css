@@ -26,7 +26,7 @@ ul {
 #menu li {
   display: inline;
   margin: 0 10px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .underline {
@@ -36,21 +36,22 @@ ul {
 }
 
 .clientURL:hover {
-  color:#4f4f4f;
+  color: #4f4f4f;
 }
 
 #work {
-  margin-left: 50px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .email textarea:hover {
-  border:none;
-  color:transparent;
+  border: none;
+  color: transparent;
   text-shadow: 0 0 0 #4f4f4f;
 }
 
 .email:hover ~ #tooltip {
-  display:block;
+  display: block;
 }
 
 .email textarea {
@@ -63,35 +64,59 @@ ul {
   box-shadow: none;
 
   resize: none; /*remove the resize handle on the bottom right*/
-  width:179px;
-  height:1.2em;
-  font-family:'Roboto', serif;
-  font-size:1em;
-  cursor:pointer;
+  width: 179px;
+  height: 1.2em;
+  font-family: "Roboto", serif;
+  font-size: 1em;
+  cursor: pointer;
   border-bottom: 1px solid black;
 
-  color:transparent;
+  color: transparent;
   text-shadow: 0 0 0 #000;
 }
 
-.email textarea::selection{
-  background:transparent;
+.email textarea::selection {
+  background: transparent;
 }
 
 #tooltip {
-  text-decoration:none;
-  position:relative;
-  display:none;
-  width:150px;
+  text-decoration: none;
+  position: relative;
+  display: none;
+  width: 150px;
 }
 
 .imgBorder {
   border: 10px solid rgba(0, 0, 0, 1);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
-    border-radius: 28px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 28px;
   width: 300px;
+}
+
+.project {
+  height: 900px;
+}
+
+.projectCarousel {
+  height: 70%;
 }
 
 .projectCarousel img {
   margin: 0 10px;
+}
+
+.carouselButton {
+  position: relative;
+  bottom: 250px;
+}
+
+.projectTitle {
+  margin-bottom: 30px;
+}
+
+.siteTitle {
+  margin-left: 40px;
+}
+#Navbar {
+  margin-top: 10px;
 }

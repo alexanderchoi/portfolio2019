@@ -6,8 +6,8 @@ class Navbar extends Component {
   };
   render() {
     return (
-      <div>
-        <h2>Alex Choi &mdash; Web Development</h2>
+      <div id="Navbar">
+        <h2 className="siteTitle">Alex Choi &mdash; Web Development </h2>
         <div id="menu">
           <ul>
             <li onClick={this.props.changeView}>Work</li>

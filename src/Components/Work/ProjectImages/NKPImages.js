@@ -4,11 +4,4 @@ import mobile01 from "../../../image/projectImages/nkp/mobile01.png";
 import mobile02 from "../../../image/projectImages/nkp/mobile02.png";
 import mobile03 from "../../../image/projectImages/nkp/mobile03.png";
 
-
-export default [
-    desktop01,
-    ipad01,
-    mobile01,
-    mobile02,
-    mobile03
-]
+export default [mobile01, mobile03, mobile02, ipad01, desktop01];
