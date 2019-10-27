@@ -4,7 +4,7 @@ body {
 }
 
 #menu {
-  right: 0;
+  right: 30px;
   position: absolute;
   display: inline-block;
   height: 10px;
@@ -25,7 +25,7 @@ ul {
 
 #menu li {
   display: inline;
-  margin: 0 10px;
+  margin: 0 8px;
   cursor: pointer;
 }
 
@@ -40,8 +40,13 @@ ul {
 }
 
 #work {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#project {
   width: 80%;
-  margin: 0 auto;
 }
 
 .email textarea:hover {
@@ -98,6 +103,7 @@ ul {
 }
 
 .projectCarousel {
+  position: relative;
   height: 70%;
 }
 
@@ -117,6 +123,17 @@ ul {
 .siteTitle {
   margin-left: 40px;
 }
+
 #Navbar {
   margin-top: 10px;
+}
+
+#Info {
+  margin-left: 100px;
+  width: 100%;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 2em;
 }

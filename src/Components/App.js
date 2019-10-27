@@ -10,9 +10,8 @@ class App extends Component {
   };
 
   changeView = e => {
-    let display = e.target.outerHTML.slice(4, 8);
     this.setState({
-      display: display
+      display: e.target.innerText
     });
   };
 

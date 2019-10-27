@@ -27,13 +27,12 @@ class Project extends Component {
       <div className="project">
         <h3 className="projectTitle">&mdash; {this.props.project.client}</h3>
         <div className="projectCarousel">
-          <button
+          <span
             onClick={this.props.updateProjectView}
             className="carouselButton"
           >
-            L
-          </button>
-
+            <i className="fas fa-chevron-left"></i>
+          </span>
           <img
             className="imgBorder"
             src={this.props.project.images[0]}
@@ -49,12 +48,12 @@ class Project extends Component {
             src={this.props.project.images[2]}
             alt="none"
           />
-          <button
+          <span
             onClick={this.props.updateProjectView}
             className="carouselButton"
           >
-            R
-          </button>
+            <i className="fas fa-chevron-right"></i>
+          </span>
         </div>
 
         <div className="projectFooter">

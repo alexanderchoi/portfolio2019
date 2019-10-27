@@ -9,7 +9,7 @@ class Work extends Component {
     projects: [
       {
         client: "Walking Bucket",
-        clientURL: "https://ashowforachange.com/",
+        clientURL: "https://walking-bucket.herokuapp.com/",
         title: "Personal tracker for basketball shot progress",
         description:
           "Progressive web app built with React and MongoDB. User can update their shot workouts and visually track their progress as they improve.",
@@ -35,10 +35,10 @@ class Work extends Component {
 
   render() {
     const updateProjectView = e => {
-      let direction = e.target.innerText;
+      let direction = e.target.classList[1].slice(11);
       let currentView = this.state.projectView;
 
-      if (direction === "L") {
+      if (direction === "left") {
         if (this.state.projectView < 1) {
           this.setState({ projectView: this.state.projects.length - 1 });
         } else {
