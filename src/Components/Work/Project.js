@@ -6,8 +6,8 @@ class Project extends Component {
     window.onmousemove = function(e) {
       var x = e.clientX,
         y = e.clientY;
-      tooltip.style.top = y - 420 + "px";
-      tooltip.style.left = x - 40 + "px";
+      tooltip.style.top = y - 620 + "px";
+      tooltip.style.left = x - 180 + "px";
     };
   }
 
@@ -24,36 +24,40 @@ class Project extends Component {
     };
 
     return (
-      <div className="project">
+      <div id="Project">
         <h3 className="projectTitle">&mdash; {this.props.project.client}</h3>
         <div className="projectCarousel">
-          <span
-            onClick={this.props.updateProjectView}
-            className="carouselButton"
-          >
-            <i className="fas fa-chevron-left"></i>
-          </span>
-          <img
-            className="imgBorder"
-            src={this.props.project.images[0]}
-            alt="none"
-          />
-          <img
-            className="imgBorder"
-            src={this.props.project.images[1]}
-            alt="none"
-          />
-          <img
-            className="imgBorder"
-            src={this.props.project.images[2]}
-            alt="none"
-          />
-          <span
-            onClick={this.props.updateProjectView}
-            className="carouselButton"
-          >
-            <i className="fas fa-chevron-right"></i>
-          </span>
+          <div id="carouselButtons">
+            <span
+              onClick={this.props.updateProjectView}
+              className="carouselButton"
+            >
+              <i className="fas fa-chevron-left"></i>
+            </span>
+            <span
+              onClick={this.props.updateProjectView}
+              className="carouselButton"
+            >
+              <i className="fas fa-chevron-right"></i>
+            </span>
+          </div>
+          <div id="projectImages">
+            <img
+              className="imgBorder"
+              src={this.props.project.images[0]}
+              alt="none"
+            />
+            <img
+              className="imgBorder"
+              src={this.props.project.images[1]}
+              alt="none"
+            />
+            <img
+              className="imgBorder"
+              src={this.props.project.images[2]}
+              alt="none"
+            />
+          </div>
         </div>
 
         <div className="projectFooter">
@@ -70,7 +74,19 @@ class Project extends Component {
             {this.props.project.title}
           </h3>
           <p>{this.props.project.description}</p>
-          <span> - </span>
+          <p> - </p>
+          {this.props.project.github ? (
+            <a
+              href={this.props.project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View code here
+            </a>
+          ) : (
+            <span></span>
+          )}
+          <br />
           <br />
           <div>+1 714 337 0522</div>
           <div>

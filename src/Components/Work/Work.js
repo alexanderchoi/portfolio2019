@@ -12,22 +12,25 @@ class Work extends Component {
         clientURL: "https://walking-bucket.herokuapp.com/",
         title: "Personal tracker for basketball shot progress",
         description:
-          "Progressive web app built with React and MongoDB. User can update their shot workouts and visually track their progress as they improve.",
-        images: WalkingBucketImages
+          "Progressive web app built with React, Express and MongoDB. User can update their shot workouts and visually track their daily progress as they improve.",
+        images: WalkingBucketImages,
+        github: "https://github.com/alexanderchoi/walking-buckets"
       },
       {
         client: "NKP Medical",
         clientURL: "https://www.nkpmedical.com/",
         title: "Plastic Surgery Landing Pages",
         description: "Front end web development, debugging and support.",
-        images: NKPImages
+        images: NKPImages,
+        github: null
       },
       {
         client: "A Show For A Change",
         clientURL: "https://ashowforachange.com/",
         title: "Social-conscious streaming platform",
         description: "Front end web development, debugging and support.",
-        images: ASFACImages
+        images: ASFACImages,
+        github: null
       }
     ],
     projectView: 0
