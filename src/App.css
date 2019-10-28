@@ -1,7 +1,9 @@
 body {
   font-family: "Roboto", serif;
   color: #212232;
+  margin: 0;
 }
+
 #root {
   height: 1100px;
 }
@@ -11,6 +13,7 @@ body {
   position: absolute;
   display: inline-block;
   height: 10px;
+  top:53px;
 }
 
 h2 {
@@ -132,9 +135,6 @@ ul {
   justify-content: space-between;
 }
 
-.carouselButton {
-}
-
 .projectTitle {
   margin-bottom: 30px;
 }
@@ -162,8 +162,38 @@ ul {
 }
 
 .projectFooter {
-  padding: 30px;
+  padding: 30px 120px 30px 30px;
   border-left: 2px solid black;
   margin-left: 60px;
   width: 70%;
+}
+
+@media only screen and (max-width:768px) {
+  .siteTitle {
+    margin: 0 0 0 40px;
+  }
+  .siteTitleDetail {
+    display:none;
+  }
+  #menu {
+    right:25px;
+  }
+  #Navbar {
+    margin:50px 0 20px 0;
+  }
+  #Project {
+    width:100%;
+  }
+  .projectTitle {
+    margin-left:40px;
+  }
+  .projectFooter {
+    line-height:1.6em;
+    margin-left:35px;
+  }
+
+  #Info {
+    margin:40px 0 0 40px;
+    width: 75%;
+  }
 }
