@@ -136,7 +136,7 @@ ul {
 }
 
 .projectTitle {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .siteTitle {
@@ -164,11 +164,11 @@ ul {
 .projectFooter {
   padding: 30px 120px 30px 30px;
   border-left: 2px solid black;
-  margin-left: 60px;
+  margin:5px 0 0 60px;
   width: 70%;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1000px) {
   .siteTitle {
     margin: 0 0 0 40px;
   }
@@ -176,7 +176,7 @@ ul {
     display:none;
   }
   #menu {
-    right:25px;
+    right:22px;
   }
   #Navbar {
     margin:50px 0 20px 0;
@@ -189,11 +189,21 @@ ul {
   }
   .projectFooter {
     line-height:1.6em;
-    margin-left:35px;
+    margin:1130px 0 0 31px;
   }
-
   #Info {
     margin:40px 0 0 40px;
     width: 75%;
+  }
+  #projectImages {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+  }
+  #projectImages img {
+    margin: 0 auto 10px auto;
+  }
+  #carouselButtons {
+    width:100%;
   }
 }
