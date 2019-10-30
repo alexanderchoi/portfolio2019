@@ -68,21 +68,33 @@ body {
 
 /* Tablet breakpoint */
 @media screen and (max-width: 1024px) {
-	
+  .wrapper-grid {
+		grid-template-columns: 5% 10% 1fr 10% 5%;
+  }
+  
+	.siteTitleDetail {
+    display:none;
+  }
+  #projectImages {
+    display:block;
+  }
+
 }
 
 /* Mobile breakpoint */
 @media screen and (max-width: 700px) {
-	.wrapper-grid {
-		grid-template-columns: 5% 10% 1fr 10% 5%;
-	}
-
+	#projectImages img {
+    width: 90%;
+  }
+  #menu {
+    right:8px;
+  }
 }
 
 #menu {
   height: 10px;
   float:right;
-  top:30px;
+  top:25px;
   position:relative;
 }
 
@@ -176,8 +188,8 @@ ul {
 }
 
 #Info {
-  grid-column-start:3;
-  width:400px;
+  grid-column-start:2;
+  width:300px;
 }
 
 .fa-chevron-left,
