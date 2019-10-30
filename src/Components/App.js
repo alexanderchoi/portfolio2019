@@ -17,7 +17,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="wrapper-grid">
         <Navbar changeView={this.changeView.bind(this)} />
         {this.state.display === "Work" ? <Work /> : <Info />}
       </div>

@@ -1,46 +1,49 @@
 import React, { Component } from "react";
 
 class Project extends Component {
-  componentDidMount() {
-    var tooltip = document.getElementById("tooltip");
-    window.onmousemove = function(e) {
-      var x = e.clientX,
-        y = e.clientY;
-      tooltip.style.top = y - 620 + "px";
-      tooltip.style.left = x - 180 + "px";
-    };
-  }
+  // componentDidMount() {
+  //   var tooltip = document.getElementById("tooltip");
+  //   window.onmousemove = function(e) {
+  //     var x = e.clientX,
+  //       y = e.clientY;
+  //     tooltip.style.top = y - 620 + "px";
+  //     tooltip.style.left = x - 180 + "px";
+  //   };
+  // }
 
   render() {
-    const copyEmailToClipBoard = () => {
-      document.querySelector(".email").childNodes[0].select();
-      document.execCommand("Copy");
-      document.activeElement.blur();
-      document.getElementById("tooltip").innerText = "Copied to clipboard!";
-    };
+    // const copyEmailToClipBoard = () => {
+    //   document.querySelector(".email").childNodes[0].select();
+    //   document.execCommand("Copy");
+    //   document.activeElement.blur();
+    //   document.getElementById("tooltip").innerText = "Copied to clipboard!";
+    // };
 
-    const resetToolTipText = () => {
-      document.getElementById("tooltip").innerText = "Click to copy";
-    };
+    // const resetToolTipText = () => {
+    //   document.getElementById("tooltip").innerText = "Click to copy";
+    // };
 
     return (
       <div id="Project">
         <h3 className="projectTitle">&mdash; {this.props.project.client}</h3>
         <div className="projectCarousel">
-          <div id="carouselButtons">
-            <span
-              onClick={this.props.updateProjectView}
-              className="carouselButton"
-            >
-              <i className="fas fa-chevron-left"></i>
-            </span>
-            <span
-              onClick={this.props.updateProjectView}
-              className="carouselButton"
-            >
-              <i className="fas fa-chevron-right"></i>
-            </span>
+          <div id="div-carouselButtons">
+            <div id="carouselButtons">
+              <span
+                onClick={this.props.updateProjectView}
+                className="carouselButton"
+              >
+                <i className="fas fa-chevron-left"></i>
+              </span>
+              <span
+                onClick={this.props.updateProjectView}
+                className="carouselButton"
+              >
+                <i className="fas fa-chevron-right"></i>
+              </span>
+            </div>
           </div>
+          
           <div id="projectImages">
             <img
               className="imgBorder"
@@ -61,6 +64,7 @@ class Project extends Component {
         </div>
 
         <div className="projectFooter">
+          <div>
           <h3>
             <a
               href={this.props.project.clientURL}
@@ -88,9 +92,9 @@ class Project extends Component {
           )}
           <br />
           <br />
-          <div>+1 714 337 0522</div>
+          <div><span>+1 714 337 0522</span></div>
           <div>
-            <span
+            {/* <span
               className="email"
               onClick={function() {
                 copyEmailToClipBoard();
@@ -105,8 +109,10 @@ class Project extends Component {
                 defaultValue="alexchoiweb@gmail.com"
               ></textarea>
             </span>
-            <span id="tooltip">Click to copy</span>
+            <span id="tooltip">Click to copy</span> */}
+            <span>alexchoiweb@gmail.com</span>
           </div>
+        </div>
         </div>
       </div>
     );

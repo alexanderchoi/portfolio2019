@@ -57,7 +57,7 @@ class Work extends Component {
     };
 
     return (
-      <div id="work">
+      <div id="Work">
         <Project
           project={this.state.projects[this.state.projectView]}
           updateProjectView={updateProjectView}
