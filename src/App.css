@@ -10,6 +10,7 @@ body {
   grid-template-rows: 100px 1300px
 }
 
+
 #Navbar {
   grid-column-start:2;
   grid-column-end:5;
@@ -44,7 +45,8 @@ body {
 }
 
 #projectImages img{
-  width:100%;
+  width:97%;
+  box-sizing: border-box;
 }
 
 #div-carouselButtons {
@@ -55,7 +57,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size:1.5em;
+  font-size:1em;
   /* background-color:lightgreen; */
   position:fixed;
   left:0;
@@ -84,7 +86,7 @@ body {
 /* Mobile breakpoint */
 @media screen and (max-width: 700px) {
 	#projectImages img {
-    width: 90%;
+    width: 97%;
   }
   #menu {
     right:8px;
@@ -206,4 +208,8 @@ ul {
   /* background-color:lightseagreen; */
 
   grid-column-start:2;
+}
+
+.hidden {
+  visibility:hidden;
 }

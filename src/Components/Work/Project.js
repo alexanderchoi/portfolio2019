@@ -1,28 +1,16 @@
 import React, { Component } from "react";
 
 class Project extends Component {
-  // componentDidMount() {
-  //   var tooltip = document.getElementById("tooltip");
-  //   window.onmousemove = function(e) {
-  //     var x = e.clientX,
-  //       y = e.clientY;
-  //     tooltip.style.top = y - 620 + "px";
-  //     tooltip.style.left = x - 180 + "px";
-  //   };
-  // }
-
   render() {
-    // const copyEmailToClipBoard = () => {
-    //   document.querySelector(".email").childNodes[0].select();
-    //   document.execCommand("Copy");
-    //   document.activeElement.blur();
-    //   document.getElementById("tooltip").innerText = "Copied to clipboard!";
-    // };
+    
+    function isVisible(element) {
+      console.log(element)
+      let elementBox = element.getBoundingClientRect();
+      let distanceFromTop = -200;
 
-    // const resetToolTipText = () => {
-    //   document.getElementById("tooltip").innerText = "Click to copy";
-    // };
-
+      return ((elementBox.top - window.innerHeight) < distanceFromTop);
+    }
+    
     return (
       <div id="Project">
         <h3 className="projectTitle">&mdash; {this.props.project.client}</h3>
@@ -94,22 +82,6 @@ class Project extends Component {
           <br />
           <div><span>+1 714 337 0522</span></div>
           <div>
-            {/* <span
-              className="email"
-              onClick={function() {
-                copyEmailToClipBoard();
-              }}
-              onMouseLeave={function() {
-                resetToolTipText();
-              }}
-            >
-              <textarea
-                className="noselect"
-                spellCheck="false"
-                defaultValue="alexchoiweb@gmail.com"
-              ></textarea>
-            </span>
-            <span id="tooltip">Click to copy</span> */}
             <span>alexchoiweb@gmail.com</span>
           </div>
         </div>
