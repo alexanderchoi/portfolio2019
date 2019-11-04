@@ -9,8 +9,10 @@ class Info extends Component {
           Angeles. He works a full-time gig but is open to contract
           opportunities and new projects. Say hi and let's connect!
         </span>
-        <p>alexchoiweb@gmail.com</p>
         <p>+1714 337 0522</p>
+        <p>alexchoiweb@gmail.com</p>
+        
+        <a href="https://github.com/alexanderchoi/portfolio2019">View github for this site</a>
       </div>
     );
   }

@@ -192,6 +192,7 @@ ul {
 #Info {
   grid-column-start:2;
   width:300px;
+  font-size:1.2em;
 }
 
 .fa-chevron-left,
