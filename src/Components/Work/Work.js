@@ -8,7 +8,7 @@ class Work extends Component {
   state = {
     projects: [
       {
-        client: "Walking Bucket",
+        client: "Basketball Workout Visualizer",
         clientURL: "https://walking-bucket.herokuapp.com/",
         title: "Personal tracker for basketball shot progress",
         description:

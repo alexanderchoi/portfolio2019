@@ -10,6 +10,7 @@ class Project extends Component {
 
       return ((elementBox.top - window.innerHeight) < distanceFromTop);
     }
+
     
     return (
       <div id="Project">
