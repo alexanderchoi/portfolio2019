@@ -19,8 +19,8 @@ class Work extends Component {
       {
         client: "NKP Medical",
         clientURL: "https://www.nkpmedical.com/",
-        title: "Plastic Surgery Landing Pages",
-        description: "Front end web development, debugging and support.",
+        title: "Plastic surgery websites",
+        description: "Brand websites built for private plastic surgery practices, powered by Wordpress. Front end web development, debugging and support.",
         images: NKPImages,
         github: null
       },
@@ -28,7 +28,7 @@ class Work extends Component {
         client: "A Show For A Change",
         clientURL: "https://ashowforachange.com/",
         title: "Social-conscious streaming platform",
-        description: "Front end web development, debugging and support.",
+        description: "Streaming platform built for creators to upload videos and film with socially-conscious objectives. Viewers can support creators and their media with some change. Built with React and PHP backend. Front end web development, debugging and support.",
         images: ASFACImages,
         github: null
       }
