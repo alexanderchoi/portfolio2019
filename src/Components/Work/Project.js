@@ -54,7 +54,7 @@ class Project extends Component {
             </div>
           </div>
           
-          <div id="projectImages" className="hidden section">
+          <div id="projectImages" className="section">
             <img
               className="imgBorder"
               src={this.props.project.images[0]}
