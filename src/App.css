@@ -44,6 +44,11 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.section {
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
 #projectImages img{
   width:97%;
   box-sizing: border-box;
@@ -214,3 +219,9 @@ ul {
 .hidden {
   visibility:hidden;
 }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+

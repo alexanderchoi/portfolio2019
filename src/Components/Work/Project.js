@@ -1,18 +1,39 @@
 import React, { Component } from "react";
 
 class Project extends Component {
-  render() {
-    
+  componentDidMount() {
     function isVisible(element) {
       console.log(element)
       let elementBox = element.getBoundingClientRect();
       let distanceFromTop = -200;
-
       return ((elementBox.top - window.innerHeight) < distanceFromTop);
     }
 
-    
+    function scanDocument() {
+      let hiddenElements = document.querySelectorAll('.hidden');
+      hiddenElements.forEach(function(section) {
+          if(isVisible(section)) {
+              section.classList.remove('hidden');
+          };
+      });
+    }
+    function throttle(fn, wait) {
+      var time = Date.now();
+      return function() {
+        if ((time + wait - Date.now()) < 0) {
+          fn();
+          time = Date.now();
+        }
+      }
+    }
+
+    // document.addEventListener("load", document.getElementById('projectImages').classList.remove('hidden'))
+    document.addEventListener("scroll", throttle(scanDocument, 500));
+  }
+
+  render() {    
     return (
+      
       <div id="Project">
         <h3 className="projectTitle">&mdash; {this.props.project.client}</h3>
         <div className="projectCarousel">
@@ -33,7 +54,7 @@ class Project extends Component {
             </div>
           </div>
           
-          <div id="projectImages">
+          <div id="projectImages" className="hidden section">
             <img
               className="imgBorder"
               src={this.props.project.images[0]}
